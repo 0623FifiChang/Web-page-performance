@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"> <!--字元編碼-->
+        <title>網頁標題</title>
+
+        <link rel="stylesheet" href="./styles/styles.css">
+
+        <!-- <link rel="preconnect" href="http://fonts.googleapis.com/"> -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
+    </head>
+    <body>
+        <h1>樣式1</h1>
+
+
+        <!-- <ol>有順序清單，<li>每一項內文 -->
+        <p>此文件的CSS設計有：</p>
+        <ol>
+            <li>body置中+邊框設計</li>
+            <li>hr分隔線設計</li>
+            <li>簡單表格設計(含滑鼠效果)</li>
+        </ol>
+        
+
+        <hr>
+        <h2>HTML元素邊界關係！margin、padding、border</h2>
+        <!-- target="_blank"代表開啟節的方式為"另開新視窗" -->
+        參考資料：<a href="https://ithelp.ithome.com.tw/articles/10205322" target="_blank">Day11-HTML元素邊界關係！margin、padding、border</a>
+        
+
+        <!-- <ul>無順序清單，<li>每一項內文 -->
+        <!-- list-style-type: 用來自訂清單樣式 -->
+        <ul style="list-style-type:'★  '; color:rgb(217, 119, 0);">
+            <li><strong style="color:rgb(217, 119, 0);">margin (外距)</strong>：元素外邊界外部與其他元素間的間距</li>
+            <li><strong style="color:rgb(217, 119, 0);">border (邊框)</strong>：元素邊框</li>
+            <li><strong style="color:rgb(217, 119, 0);">padding (內距)</strong>：元素內邊界內部與其內文區塊的間距</li>             
+        </ul>
+        Ps.一般設定的寬高(width、height)都是指 <strong style="color:black;">設定內文區塊的寬高</strong><br>
+        由外到內：margin >> border >> padding >> 內容區塊
+        
+        <br><br>
+        <hr>
+        > 指定橫排三格的寬度：160px , 160px, 360px<br>
+        由於padding設定四周寬度為20px，所以寬度分別應該約為：<br>
+        160 + 20 + 20 = <strong style="color:black;">200px</strong><br>
+        160 + 20 + 20 = <strong style="color:black;">200px</strong><br>
+        360 + 20 + 20 = <strong style="color:black;">400px</strong><br>
+        但是由於表格設定寬度僅有<strong style="color:rgb(234, 42, 255);">600px</strong>，所以寬度等比例縮小<br>
+        實際寬度約為：<strong style="color:rgb(152, 42, 255);">150px , 150px , 300px</strong>
+
+        <table class="table1">
+            <caption class="header1">表格標題1</caption>
+            <tr>
+                <th width="160px">A</th>   <th width="160px">B</th>   <th width="360px">C</th>      
+            </tr>
+            <tr>
+                <td>qq</td>   <td>qqq</td>   <td>qqqq</td>
+            </tr>
+            <tr>
+                <td>xxx</td>   <td>xx</td>   <td>xxxxxxxxx</td>
+            </tr>
+        </table>
+        <br><br><br>
+
+        > 指定直排三格的高度：20px , 50px , 70px<br>
+        由於padding設定四周寬度為20px，所以實際寬度分別約為：<br>
+        30 + 20 + 20 = <strong style="color:black;">70px</strong><br>
+        50 + 20 + 20 = <strong style="color:black;">90px</strong><br>
+        70 + 20 + 20 = <strong style="color:black;">110px</strong><br>
+        【以上皆不包含border(邊框寬度)】<br>
+        未設定寬高的會自動均分
+
+        <table class="table1">
+            <caption class="header1">表格標題2</caption>
+            <tr>
+                <th height="30px">A</th>    <td></td>  <td></td>
+            </tr>
+            <tr>
+                <th height="50px">B</th>   <td></td>   <td></td>   
+            </tr>
+            <tr>
+                <th height="70px">C</th>   <td></td>   <td></td>
+            </tr>
+        </table>
+        <br><br><br>
+
+        > 指橫排第一格的寬度80px<br>
+        由於padding設定四周寬度為20px，所以第一格的實際寬度約為 80 + 20 + 20 = <strong style="color:rgb(152, 42, 255);">120px</strong><br>
+        【不包含border(邊框寬度)】<br>
+        未設定寬高的會自動均分
+
+        <table class="table1">
+            <caption class="header1">表格標題3</caption>
+            <tr>
+                <th height="20px" width="80px"> </th>    <th>A</th>  <th>B</th>
+            </tr>
+            <tr>
+                <th height="50px">1</th>   <td></td>   <td></td>   
+            </tr>
+            <tr>
+                <th height="70px">2</th>   <td></td>   <td></td>
+            </tr>
+        </table>
+        <br><br><br>
+
+        <hr>
+        <br><br><br>
+
+
+    </body>
+</html>
