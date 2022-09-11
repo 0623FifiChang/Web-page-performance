@@ -10,34 +10,7 @@ padding: 內距的設定
 display：說明：https://medium.com/ui-ux%E7%B7%B4%E5%8A%9F%E5%9D%8A/display-%E5%B1%AC%E6%80%A7%E4%B8%AD%E5%B8%B8%E7%94%A8%E7%9A%84%E9%A1%9E%E5%88%A5-77eb86714d8a
 */
 
-html{
-    font-family: "Sofia", sans-serif;   /*字形樣式，需搭配在.html的第10行的link*/
-    background-color: rgb(255, 247, 236);
-}
 
-body{
-    /* 上边下边 | 左边右边 */
-    margin: 30px auto;      /*auto：代表body置中 */   
-    width: 800px;
-
-    border: 5px solid;      /*border邊框設定*/
-    border-color:rgb(255, 225, 154); 
-    
-    padding: 50px;          /*內文空間與邊框的距離*/
-
-    color:gray;           /*設定body內全體文字顏色*/
-    
-}
-
-h1,h2{
-    text-align: center;     /*h1標題置中*/
-}
-
-hr{
-    border:0;
-    background-color: rgb(255, 225, 154);
-    height:3px;
-}
 
 
 
